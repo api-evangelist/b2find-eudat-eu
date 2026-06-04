@@ -1,0 +1,19 @@
+name: EUDAT B2FIND
+description: EUDAT B2FIND CKAN open-data API live-verification for APIs.json cataloging.
+url: https://raw.githubusercontent.com/api-evangelist/b2find-eudat-eu/refs/heads/main/review.yml
+created: '2026-06-04'
+modified: '2026-06-04'
+reviews:
+  - date: '2026-06-04'
+    rating: 4
+    summary: >-
+      EUDAT B2FIND runs CKAN and exposes a live, standardized open-data catalog API. The
+      endpoint was probed and returned a valid CKAN JSON response reporting approximately 1,466,694 datasets (CKAN version 2.9.8).
+      Because it runs CKAN, the full standard action/search API surface is available and consistent with all other CKAN portals.
+    endpoints:
+      - url: https://b2find.eudat.eu/api/3/action/status_show
+        status: 200
+        note: Live CKAN API response verified during inventory probe.
+      - url: https://b2find.eudat.eu
+        status: 200
+        note: Portal home.
