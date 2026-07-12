@@ -40,6 +40,8 @@ apis:
       - type: x-api-endpoint
         url: https://b2find.eudat.eu/api/3/action/status_show
 common:
+  - type: DomainSecurity
+    url: security/b2find-eudat-eu-domain-security.yml
   - type: Website
     url: https://b2find.eudat.eu
   - type: Documentation
